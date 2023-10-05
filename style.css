@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: 'Lucida Sans',  sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background: #000;
+    color: wheat;
+    padding: 20px 50px;
+}
+
+.navTop
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seach{
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 248, 250);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+   color: lightcyan; 
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid rgb(243, 245, 243);
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: rgb(198, 246, 194);
+    font-weight: 400 ;
+}
+
+.slider{
+    
+   
+    
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+}
+
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    right: 10%;
+    top:10%;
+   
+    font-size: 60px;
+    font-weight: 900;
+    text-align: right;
+    color: black;
+   
+}
+
+.sliderPrice{
+    position: absolute;
+    right: 10%;
+    top:0%;
+   
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    border: 1px white ;
+    background-color: antiquewhite;
+   
+}
+.buyButton{
+    position: absolute;
+    right: 10%;
+    top:10%;
+   
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: darkblue;
+    cursor: pointer;
+    background-color: black;
+}
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.sliderItem:nth-child(1){
+background-color: darksalmon;
+}
+.sliderItem:nth-child(2){
+    background-color: rgb(151, 239, 113);
+    }
+    .sliderItem:nth-child(3){
+        background-color: rgb(79, 200, 215);
+        }
+        .sliderItem:nth-child(4){
+            background-color: rgb(224, 132, 236);
+            }
+            .sliderItem:nth-child(5){
+                background-color: rgb(234, 234, 125);
+                }
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc{
+    color: gray ;
+    width: 50%;
+    width: 50px;
+    height: 100px;
+}
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+
+}
+
+
+.productImg{
+    width: 50%;
+    align-items: center;
+}
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 40%;
+    padding: 50px;
+}
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDesc{
+    font-style: 24px;
+    color: rgb(223, 62, 175);
+}
+
+.colors{
+ display: flex;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.color:last-child{
+    background-color: blue;
+}
+.productButton{
+    float: right;
+    padding: 10px 20px ;
+  background-color: #000;
+  color: white;
+  font-weight: 600;
+  
+  cursor: pointer;
+}
+.productButton:hover{
+background-color: white;
+color: black;
+}
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.payTitle{
+    font-size: 20px;
+    color: lightgreen;
+}
+.label{
+    font-size: 14px;
+    font-weight: 300;
+}
